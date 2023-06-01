@@ -1,0 +1,96 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended"
+    ],
+    "overrides": [
+    ],
+    "parserOptions": {
+        "ecmaVersion": "latest",
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true
+          }
+    },
+    "plugins": [
+        "react"
+    ],
+    "rules": {
+        "no-unused-vars":"warn",
+        "object-curly-spacing":["warn","always"],
+        "object-curly-newline":["warn","always"],
+        "object-property-newline": "warn",
+        "key-spacing": ["warn", {"afterColon": true}], 
+        "no-multiple-empty-lines": ["warn", {"max": 1}],
+        "padded-blocks": ["warn", "never"],
+        "comma-spacing": "warn",
+        "space-infix-ops":"warn",
+        "arrow-spacing":["warn", {"before": true, "after": true}],
+        "arrow-parens": ["warn"],
+        "comma-dangle": ["warn",{ "arrays": "never",
+        "objects": "always",
+        "imports": "never",
+        "exports": "always",
+        "functions": "never"}],
+        "brace-style":"warn",
+        "array-element-newline": ["warn",{"multiline": true, "minItems": 5}],
+        "indent": [
+            "error",
+            "tab"
+        ],
+        "linebreak-style": [
+            "error",
+            "unix"
+        ],
+        "quotes": [
+            "error",
+            "double"
+        ],
+        "semi": [
+            "error",
+            "always"
+        ],
+        "react/jsx-one-expression-per-line": 
+        [
+            "warn",
+            {"allow":"literal"}
+        ],
+        "react/jsx-indent":
+        [
+            "warn",
+            "tab"
+        ],
+        "react/jsx-curly-spacing":
+        [
+            "warn",
+            {"when": "always"}
+        ],
+        "react/jsx-curly-newline":
+        [
+            "warn",
+            {
+                "multiline": "require",
+                "singleline": "forbid"
+            }
+        ],
+        "react/jsx-equals-spacing":
+        [
+            "warn",
+            "never"
+        ],
+        "react/jsx-tag-spacing":
+        [
+            "warn",
+            {
+                "closingSlash": "never",
+                "beforeSelfClosing": "always",
+                "afterOpening": "never",
+                "beforeClosing": "never"
+            }
+        ]
+    }
+}
