@@ -91,6 +91,7 @@
                 "afterOpening": "never",
                 "beforeClosing": "never"
             }
-        ]
+        ],
+        "react/prop-types":["off"]
     }
 }
